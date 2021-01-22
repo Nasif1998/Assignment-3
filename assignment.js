@@ -53,3 +53,22 @@ function hotelCost(days){
     }
 }
 
+
+
+
+function megaFriend(names){
+    var larger =0;
+    if(names.length == 0){
+        console.log("There is no name");
+    }
+    else{
+        for(var i = 0; i<names.length; i++){
+            if(names[i].length > larger){
+                larger = names[i].length;
+                var longest = names[i];
+            }
+        }
+        return longest;
+    }
+}
+
